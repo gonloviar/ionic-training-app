@@ -6,7 +6,6 @@
     <title></title>
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
@@ -18,12 +17,31 @@
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
 
-    <!-- your app's js -->
-    <script src="js/app.js"></script>
+    
   </head>
   <body ng-app="trainingApp">
 
+    <ion-nav-view></ion-nav-view>
     
-    
+
+
+    <!-- Injecting main app module -->
+    <script src="app/app.module.js"></script>
+
+    <!-- Injectin IndexApp module -->
+    <script src="app/myIndexModule/myIndexModule.module.js"></script>
+    <script src="app/myIndexModule/myIndexModule.ctrl.js"></script>
+
+
+    <!-- Injecting feature1 module files -->
+    <script src="app/feature1/feature1.module.js"></script>
+    <script src="app/feature1/feature1.ctrl.js"></script>
+    <script src="app/feature1/feature1.service.js"></script>
+
+    <!-- Injection feature2 module files -->
+    <script src="app/feature2/feature2.module.js"></script>
+    <script src="app/feature2/feature2.ctrl.js"></script>
+    <script src="app/feature2/feature2.service.js"></script>
+
   </body>
 </html>

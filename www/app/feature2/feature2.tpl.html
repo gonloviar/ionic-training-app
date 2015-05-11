@@ -1,0 +1,31 @@
+<ion-view view-title="Feature 2">
+<ion-content>
+
+	<div>
+		<a ng-href="#/">Index...</a>
+		<h3 >Feature's 2 Template</h3>
+
+		<div ng-repeat="animal in vm.animals">
+			{{animal.name}}  state is {{animal.active}}
+		</div>
+
+		<br>
+		<div>{{vm.myService}}</div>
+
+
+		<br><br>
+		<ul>
+			<li>
+				Resolver el problema de que no carga las vistas en android aunque si que las carga en el navegador.
+				Por el momento lo unico que me da sospechas es alguna inconsistencia entre ionic y el estado abstracto
+				de ui-router.  --> Va a ser que el estado abstracto debe tener en el template el tag ion-view: SOLUCION¿?
+				UNA ESTADO ABSTRACTO REQUIERE ES UN ion-nav-view. Que gilipolllas yo, tenia la idea pero a medias.
+			</li>
+			<li>
+				aprender branching con git, para no estar haciendo y deshaciendo
+			</li>
+		</ul>
+	</div>
+
+</ion-content>
+</ion-view>

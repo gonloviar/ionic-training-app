@@ -1,0 +1,30 @@
+<ion-view view-title="Feature 1">
+<ion-content>
+	<div>
+
+		<a ng-href="#/">Index...</a>
+		<h3 >Feature's 1 Template</h3>
+
+		<div ng-repeat="color in vm.colors">
+			{{color.name}} is state is {{color.active}}
+		</div>
+
+		<br>
+		<div>{{vm.myService}}</div>
+
+		<br><br>
+		<div>			
+			<ul>
+				<li>
+						Al parecer, los controladores aunque pertenezcan a modulos distintos tiene problema si tiene el mismo nombre
+				</li>
+				<li>
+						No olvidar poner en los templates el tag ion-view
+				</li>	
+			</ul>
+		</div>
+
+	</div>
+
+</ion-content>
+</ion-view>

@@ -6,7 +6,11 @@
 angular
    .module('trainingApp', [
       
-      'ionic'
+      'ionic',
+
+      'trainingApp.myIndexModule',
+      'trainingApp.feature1',
+      'trainingApp.feature2'
 
 ])
 
@@ -23,4 +27,19 @@ angular
   });
 
 
-});
+})
+
+
+// .config(function($stateProvider, $urlRouterProvider){
+//   $urlRouterProvider.otherwise('/');
+
+//siempre que se usen los corchetes se ha de especificar los parametros
+// de 'INYECCION SEGURA' de lo contrario lanzara una excepcion de que no
+// encuentra el servicio
+.config(['$stateProvider', '$urlRouterProvider',function($stateProvider, $urlRouterProvider) {
+  
+  $urlRouterProvider.otherwise('/myIndexModule');
+
+
+  
+}]);
