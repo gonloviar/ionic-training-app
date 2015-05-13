@@ -9,7 +9,7 @@ angular
 				.state('feature2', {
 					abstract: true,
 					url: '/feature2',
-					template: '<ui-view/>'
+					template: '<ion-nav-view/>'
 				})
 
 				.state('feature2.example',{
