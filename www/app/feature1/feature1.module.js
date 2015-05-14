@@ -15,10 +15,7 @@ angular
 				.state('feature1.example',{
 					url:'/example',
 					templateUrl:'app/feature1/feature1.tpl.html',
-					// controller:'Feature1Ctrl as vm'
-					// controllerAs:'feature as vm'
-					controller: 'feature',
-					controllerAs: 'vm'
+					controller:'feature as vm'
 
 				});
 

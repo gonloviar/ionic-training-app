@@ -9,9 +9,10 @@ angular.module('trainingApp.feature2')
 			{name: 'lion', active: true},
 			{name: 'shark', active: true},
 			{name: 'falcon', active: true},
-			{name: 'ant', active: false},
+			{name: 'ant', active: false}
 		];
 
 		console.log("service2: "+ myService.getText());
+		console.log("digo: "+self.test);
 		self.myService= myService.getText();
 	}]);

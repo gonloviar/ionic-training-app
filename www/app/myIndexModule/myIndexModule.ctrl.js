@@ -17,7 +17,12 @@ angular.module('trainingApp.myIndexModule')
 			{
 				url: "#/routing-01/help",
 				description: "Routing - 01"
+			},
+			{
+				url: "#/routing-02/help",
+				description: "Routing - 02"
 			}
+
 		];
 
 		self.test= "testeando";

@@ -11,7 +11,8 @@ angular
       'trainingApp.myIndexModule',
       'trainingApp.feature1',
       'trainingApp.feature2',
-      'trainingApp.routing-01'
+      'trainingApp.routing-01',
+      'trainingApp.routing-02'
 
 ])
 

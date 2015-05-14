@@ -3,7 +3,7 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('trainingApp.routing-01', [])
+angular.module('trainingApp.routing-02', [])
 
 // .run(function($ionicPlatform) {
 //   $ionicPlatform.ready(function() {
@@ -28,29 +28,29 @@ angular.module('trainingApp.routing-01', [])
 
   $stateProvider
 
-    .state('routing-01',{
+    .state('routing-02',{
       abstract:true,
-      url: '/routing-01',
-      templateUrl: 'app/routing-01/index-tabs.tpl.html'
+      url: '/routing-02',
+      templateUrl: 'app/routing-02/index-tabs.tpl.html'
     })
 
-    .state('routing-01.home',{
+    .state('routing-02.home',{
       // url: ''  --> si lo usara de esta manera , la url seria la que
       //              indica el estado abstracto  
       url: '/home',
       views: {
         //home is a NAMED VIEW, as well as help.
         home: {
-          templateUrl: 'app/routing-01/home.html'
+          templateUrl: 'app/routing-02/home.html'
         }
       }
     })
     
-    .state('routing-01.help',{
+    .state('routing-02.help',{
       url: '/help',
       views: {
         help: {
-          templateUrl: 'app/routing-01/help.html'
+          templateUrl: 'app/routing-02/help.html'
         }
       }
     });
