@@ -1,0 +1,37 @@
+
+<!--  ESTA ES UNA ADAPTACION DE OTRO EJEMPLO
+
+      lo que hay debajo residia en un index.html y era el eje central donde se
+    cargaban las otras vistas.
+      Ahora lo he convertido en un template, el cual cargara otros templates,
+    y basandome en otros ejemplos que vi, este template lo declaro en una route ABSTRACTA,
+    para que en ella se carguen las otras vistas. Esas otras vistas son las que tendran las
+    funcionalidades. Por su parte esta solo brindara un envoltorio en estructura de TABS
+ -->
+
+
+    <!-- Los titulos que salen en esta barra, son los dados
+          en la directiva  <ion-view> con el atibuto 'title' -->
+    <ion-nav-bar class="bar-positive" align-title="left">
+    </ion-nav-bar>
+
+    <ion-tabs class="tabs-positive">
+
+      <!-- Como hay varios ion-nav-view, cada uno ha de ser nombrado
+            para poder ser identificado correctamente por el router
+
+
+      ¿podria haber problema con el nombre de los estados?
+      supongo que he de poner el estado abstracto del que 
+      descienden --> 
+
+     <!--  <ion-tab icon="ion-home" ng-href="#/routing-01/home"> -->
+     <ion-tab icon="ion-home" ui-sref="routing-01.home">
+        <ion-nav-view name="home"></ion-nav-view>
+      </ion-tab>
+
+      <ion-tab icon="ion-help" ui-sref="routing-01.help">
+        <ion-nav-view name="help"></ion-nav-view>
+      </ion-tab>
+
+    </ion-tabs>

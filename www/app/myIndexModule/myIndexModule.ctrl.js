@@ -1,5 +1,6 @@
 angular.module('trainingApp.myIndexModule')
-	.controller('MyIndexModuleCtrl', function(){
+	.controller('MyIndexModuleCtrl', ['f2.myService',
+		function(myService){
 
 		console.log("soy ctrl de MyIndexModule");
 
@@ -12,9 +13,14 @@ angular.module('trainingApp.myIndexModule')
 			{
 				url: "#/feature2/example",
 				description: "Feature2"
+			},
+			{
+				url: "#/routing-01/help",
+				description: "Routing - 01"
 			}
 		];
 
 		self.test= "testeando";
 		console.log("hola: " + self.test);
-	});
+		self.myService= myService.getText();
+	}]);

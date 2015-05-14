@@ -1,6 +1,10 @@
 <!-- <div ng-controller="MyIndexModuleCtrl as vm"> -->
 <ion-view view-title="Index Page">
 
+<button class="button button-dark button-small padding"> 
+	 button-dark
+</button>
+
 <div>
 	<h2>Index Module</h2>
 	<div ng-repeat="module in vm.modules">
@@ -8,7 +12,13 @@
 			{{module.description}}
 		</a>
 	</div>
+	<hr>
 
+	<div> {{vm.myService}}</div>
+	<div> El servicio de feature2, fue injectado solo en el modulo principal;
+			el modulo de indice puede acceder a este servicio sin necesidad de injectarlo
+			en su creacion.
+	</div>
 </div>
 
 </ion-view>
