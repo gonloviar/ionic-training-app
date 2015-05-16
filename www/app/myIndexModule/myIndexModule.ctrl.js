@@ -19,7 +19,7 @@ angular.module('trainingApp.myIndexModule')
 				description: "Routing - 01"
 			},
 			{
-				url: "#/routing-02/help",
+				url: "#/routing-02/todos",
 				description: "Routing - 02"
 			}
 

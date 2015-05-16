@@ -31,26 +31,43 @@ angular.module('trainingApp.routing-02', [])
     .state('routing-02',{
       abstract:true,
       url: '/routing-02',
-      templateUrl: 'app/routing-02/index-tabs.tpl.html'
+      templateUrl: 'app/routing-02/templates/index-tabs.tpl.html'
     })
 
-    .state('routing-02.home',{
+    .state('routing-02.todos',{
       // url: ''  --> si lo usara de esta manera , la url seria la que
-      //              indica el estado abstracto  
-      url: '/home',
+      //              indica el estado abstracto 
+      abstract: true,
+      url: '/todos',
       views: {
-        //home is a NAMED VIEW, as well as help.
-        home: {
-          templateUrl: 'app/routing-02/home.html'
+        //todos is a NAMED VIEW, as well as help.
+        todos: {
+          template: '<ion-nav-view></ion-nav-view>'
         }
       }
     })
+        .state('routing-02.todos.index', {
+          url: '',
+          templateUrl: 'app/routing-02/templates/todos.html',
+          controller: 'TodosCtrl as vm'
+        })
+        .state('routing-02.todos.detail', {
+          // Url parameter
+          url: '/:todo',
+          templateUrl: 'app/routing-02/templates/todo.html',
+          controller: 'TodoCtrl as vm',
+          resolve: {
+            todo: function($stateParams, TodosService){
+              return TodosService.getTodo($stateParams.todo);
+            }
+          }
+        })
     
     .state('routing-02.help',{
       url: '/help',
       views: {
         help: {
-          templateUrl: 'app/routing-02/help.html'
+          templateUrl: 'app/routing-02/templates/help.html'
         }
       }
     });

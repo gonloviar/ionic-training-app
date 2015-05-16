@@ -16,7 +16,6 @@ angular
 					url:'/example',
 					templateUrl:'app/feature1/feature1.tpl.html',
 					controller:'feature as vm'
-
 				});
 
 			
