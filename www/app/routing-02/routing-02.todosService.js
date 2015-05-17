@@ -1,5 +1,5 @@
 angular.module('trainingApp.routing-02')
-	.factory('TodosService', ['', function(){
+	.factory('TodosService', [function(){
 		var todos = [
 			{title: "Take out the trash", done: true},
 			{title: "Do laundry", done: false},

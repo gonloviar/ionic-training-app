@@ -4,7 +4,7 @@
     	<ion-list>
     		<ion-item  ng-repeat="todo in vm.todos"
     					class="item item-icon-right" 
-                        ui-sref="app.todos.detail({todo:$index})">
+                        ui-sref="routing-02.todos.detail({todo:$index})">
                         
     			<span ng-class="{done:todo.done}"> {{todo.title}} </span>
 
