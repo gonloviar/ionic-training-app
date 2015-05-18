@@ -12,7 +12,8 @@ angular
       'trainingApp.feature1',
       'trainingApp.feature2',
       'trainingApp.routing-01',
-      'trainingApp.routing-02'
+      'trainingApp.routing-02',
+      'trainingApp.modals'
 
 ])
 

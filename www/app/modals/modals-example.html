@@ -1,0 +1,31 @@
+<ion-view title="Modales">
+
+	<ion-nav-bar class="bar-energized" align-title="center">
+		<h1 class="title">Contact Info</h1>
+		
+		<ion-nav-back-button class="button-clear">
+			<i class="ion-arrow-left-c"></i>	back
+		</ion-nav-back-button>
+
+	</ion-nav-bar>
+	
+	<ion-content>
+		
+		<div class="card" ng-click="vm.openModal()">
+			<div class="item item-divider">
+				{{vm.contact.name}}
+			</div>
+			<div class="item item-text-wrap">
+				{{vm.contact.info}}
+			</div>
+		</div>
+		
+		<div class="padding">
+			Nunca olvidar remover del $scope los modals, usando el evento $destroy, y el metodo modal.remove() para asi evitar memory leaks. 
+		</div>
+
+	</ion-content>
+
+</ion-view>
+
+

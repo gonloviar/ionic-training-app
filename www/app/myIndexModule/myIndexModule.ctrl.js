@@ -21,6 +21,10 @@ angular.module('trainingApp.myIndexModule')
 			{
 				url: "#/routing-02/todos",
 				description: "Routing - 02"
+			},
+			{
+				url: "#/modals",
+				description: "Modals"
 			}
 
 		];
